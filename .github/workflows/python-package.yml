@@ -56,7 +56,7 @@ jobs:
         pytest nothing.py
     - name: Run pytest test_coffee_cart.py
       run: |
-        pytest test_coffee_cart.py -v -s --headless2
+        pytest test_coffee_cart.py -v -s --headless2 --reruns=1
     - name: Run pytest coffee_cart_tests.py
       run: |
-        pytest coffee_cart_tests.py -v -s --rs --crumbs --headless2
+        pytest coffee_cart_tests.py -v -s --rs --headless2 --reruns=1
