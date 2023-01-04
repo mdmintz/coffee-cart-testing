@@ -59,4 +59,4 @@ jobs:
         pytest test_coffee_cart.py -v -s --headless2
     - name: Run pytest coffee_cart_tests.py
       run: |
-        pytest coffee_cart_tests.py -v -s --headless2
+        pytest coffee_cart_tests.py -v -s --rs --crumbs --headless2
