@@ -17,3 +17,15 @@ pytest test_coffee_cart.py --demo
 <p>(<code>--demo</code> mode slows down tests and highlights actions)</p>
 
 <p align="left"><a href="https://seleniumbase.io/coffee/" target="_blank"><img src="https://seleniumbase.github.io/cdn/gif/coffee_cart.gif" width="480" alt="SeleniumBase Coffee Cart Test" title="SeleniumBase Coffee Cart Test" /></a></p>
+
+3. To run that faster, remove ``--demo``:
+
+```bash
+pytest test_coffee_cart.py
+```
+
+4. For more Coffee Cart tests, run:
+
+```bash
+pytest coffee_cart_tests.py
+```
