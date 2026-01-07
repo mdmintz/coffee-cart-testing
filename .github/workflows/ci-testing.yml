@@ -40,3 +40,4 @@ jobs:
       with:
         name: seleniumbase-artifacts
         path: ./latest_logs/
+        if-no-files-found: ignore
