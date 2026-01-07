@@ -34,3 +34,9 @@ jobs:
       run: seleniumbase install chromedriver
     - name: Run pytest
       run: pytest -v -s --rs --crumbs --reruns=1
+    - name: Upload artifacts
+      if: ${{ always() }}
+      uses: actions/upload-artifact@v6
+      with:
+        name: seleniumbase-artifacts
+        path: ./latest_logs/
