@@ -20,3 +20,4 @@ class CoffeeCartTest(BaseCase):
         self.type("input#email", "test@test.test")
         self.click("button#submit-payment")
         self.assert_text("Thanks for your purchase.", "#app .success")
+        self.save_screenshot_to_logs()
